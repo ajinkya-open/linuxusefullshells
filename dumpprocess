@@ -1,0 +1,18 @@
+ps -A | grep $1 | sudo kill -9 $(awk '{print $1}')
+
+
+save this file in /usr/bin
+
+sudo chmod +x ./filename
+
+now u can pass the argument of the procesname and it will end it 
+
+example 
+consider i save the file as dumpprocess
+
+now 
+
+$ dumpprocess firefox
+
+
+and done it will kill that process
